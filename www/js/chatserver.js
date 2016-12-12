@@ -69,6 +69,15 @@ function addEvents() {
         sendMessage();
     }
   });
+
+  // Quick hack to get auto scroll in...
+  var interval = setInterval(function () {
+    if ($('.chatapp-chatbox').scrollTop() !== $('.chatapp-chatbox')[0].scrollHeight) {
+      $('.chatapp-chatbox').scrollTop($('.chatapp-chatbox').scrollTop() + 20);
+    } else {
+      clearInterval(interval);
+    }
+  }, 500);
 }
 
 function boot() { // jshint ignore:line

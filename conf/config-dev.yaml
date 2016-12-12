@@ -1,0 +1,18 @@
+# Example config for a AWS instance setup to run in single node
+
+# CLUSTER CONFIG
+thisIP: ip-172-31-28-202
+dockerRegistry: ip-172-31-28-202:7777
+dockerDriver: 'virtualbox'
+nodes:
+  managers: 1
+  workers: 2
+
+# WEB APP / NODE CONFIG
+auth:
+  clientSecret: 'MFTUwf9A0PkPjYlBPAMH_t8k'
+  clientId: '656494435867-4hbncr2joovfkuog5098jl60he7gc4f1.apps.googleusercontent.com'
+  redirectUri: 'http://ec2-35-163-250-250.us-west-2.compute.amazonaws.com/'
+
+port: 80
+replicas: 3

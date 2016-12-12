@@ -1,0 +1,78 @@
+body {
+  padding: 5px 5px 0 5px;
+  background-color: #eee;
+}
+
+input[data-check-plain|="true"] {
+  color: red;
+}
+
+/*
+ * Header styles
+*/
+.chatapp-userHeader,
+.chatapp-userHeader__image {
+  height: 35px;
+}
+
+.chatapp-userHeader__spacer {
+  height: 100%;
+  width: 15px;
+}
+
+.chatapp-userHeader__image,
+.chatapp-userHeader__displayName,
+.chatapp-userHeader__logoutHolder,
+.chatapp-userHeader__spacer {
+  float: right;
+}
+
+.chatapp-userHeader__logoutHolder {
+  width: 100px;
+}
+
+.chatapp-userHeader__image {
+  border-radius: 50%;
+}
+
+.chatapp-buttonHolder {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 200px;
+}
+
+.chatapp-loadsplash {
+  position: fixed;
+  top: 0; bottom: 0; left: 0; right: 0;
+  background: black;
+  opacity: 0.2;
+  text-align: center;
+}
+
+/*
+ * Body Styles
+ */
+.chatapp-roomTitle {
+  margin-top: 50px;
+  min-height: 35px;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.chatapp-chatbox {
+  margin-top: 20px;
+  height: 300px;
+  overflow-y: scroll;
+}
+
+.chatapp-chatbox__messages {
+  margin: 0;
+  padding: 0;
+}
+
+.chatapp-chatbox li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.chatapp-chatbox li:nth-child(odd) { background: #eee; }

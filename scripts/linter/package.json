@@ -1,0 +1,10 @@
+{
+  "name": "linter",
+  "description": "A jshint wrapper for project files",
+  "author": "Ally Ogilvie",
+  "dependencies": {
+     "jshint": "2.x",
+     "colors": "0.6.x"
+  },
+  "engine": "node >= 0.4.1"
+}

@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <script src='js/jquery.min.js'></script>
+    <!-- <script src="js/bootstrap.min.js" defer></script> -->
+    <script src="js/socket.io.js"></script>
+    <script src='js/chatserver.js'></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/chatserver.css"/>
+  </head>
+  <body onload="boot()">
+
+    <div class="container">
+
+      <div class="chatapp-userHeader">
+        <span class="chatapp-userHeader__logoutHolder">
+          <button class="btn btn-md btn-primary btn-block" type="submit" onclick="logout()">Logout</button>
+        </span>
+        <span class="chatapp-userHeader__spacer"></span>
+        <img class="chatapp-userHeader__image" src="">
+        <span class="chatapp-userHeader__spacer"></span>
+        <span class="chatapp-userHeader__displayName"></span>
+      </div>
+
+      <div class="chatapp-roomTitle navbar navbar-default container-fluid">
+        <span id="roomTitle">Lobby (hint: /join aroom)</ul>
+      </div>
+      <div class="chatapp-chatbox navbar navbar-default container-fluid">
+        <ul id="messages" class="chatapp-chatbox__messages">
+          <li>Type /help for more commands</li>
+        </ul>
+      </div>
+      <input id="message" type="text" class="form-control">
+
+      <div class="chatapp-buttonHolder container">
+        <button class="btn btn-md btn-primary btn-block" onclick="sendMessage()">Send Message</button>
+      </div>
+
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,31 @@
+{
+  "browser": true,
+  "node": true,
+  "jquery": true,
+
+  "predef": [
+    "io"
+  ],
+
+  "maxerr": 10,
+  "indent": 2,
+  "devel": true,
+  "globalstrict"  : false,
+  "esnext": true,
+  "boss": true,
+  "curly": true,
+  "eqeqeq": true,
+  "eqnull": true,
+  "immed": true,
+  "indent": 2,
+  "latedef": true,
+  "maxlen": 120,
+  "newcap": false,
+  "noarg": true,
+  "nonew": true,
+  "quotmark": "single",
+  "strict": true,
+  "sub": true,
+  "undef": true,
+  "unused": true
+}

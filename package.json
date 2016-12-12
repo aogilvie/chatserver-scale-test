@@ -1,0 +1,26 @@
+{
+  "name": "chatserver-scale-test",
+  "version": "1.0.0",
+  "description": "Sample chat server",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "*",
+    "express-session": "*",
+    "body-parser": "*",
+    "require-yaml": "*",
+    "body-parser": "*",
+    "bootstrap": "*",
+    "jquery": "*",
+    "googleapis": "*",
+    "passport": "*",
+    "passport-google-auth": "*",
+    "socket.io": "*",
+    "node-localstorage": "*"
+  },
+  "author": "github.com/allyogilvie",
+  "license": "MIT"
+}
